@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">TestProject</string>
-    <string name="list">List</string>
-    <string name="converter">Converter</string>
-    <string name="currencies_list">Currencies list</string>
+    <string name="bottom_list_item_title">List</string>
+    <string name="bottom_converter_item_title">Converter</string>
+    <string name="toolbar_currencies_list_title">Currencies list</string>
+    <string name="toolbar_converter_title">Converter</string>
     <string name="filter">Filter</string>
+
 </resources>

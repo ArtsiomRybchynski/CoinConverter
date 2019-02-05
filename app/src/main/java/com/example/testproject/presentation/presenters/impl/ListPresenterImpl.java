@@ -1,9 +1,9 @@
 package com.example.testproject.presentation.presenters.impl;
 
-import com.example.testproject.data.repositories.Repository;
-import com.example.testproject.domain.entities.Coin;
-import com.example.testproject.domain.entities.DataObject;
-import com.example.testproject.domain.entities.ResponseObject;
+import com.example.testproject.repositories.Repository;
+import com.example.testproject.entities.Coin;
+import com.example.testproject.entities.CoinDescription;
+import com.example.testproject.entities.RawResponse;
 import com.example.testproject.presentation.presenters.ListPresenter;
 import com.example.testproject.presentation.ui.BaseView;
 
@@ -17,19 +17,19 @@ import io.reactivex.schedulers.Schedulers;
 
 public class ListPresenterImpl implements ListPresenter {
 
-    private ListView mListView;
-    private Repository mRepository;
-    private List<DataObject> mDataObjects;
-    private Coin mCoin;
-    private List<Coin> mCoins = new ArrayList<>();
+    private ListFragmentView listFragmentView;
+    private Repository repository;
+    private List<CoinDescription> coinDescriptions;
+    private Coin coin;
+    private List<Coin> coins = new ArrayList<>();
 
     public ListPresenterImpl(Repository repository) {
-        mRepository = repository;
+        this.repository = repository;
     }
 
     @Override
     public void onAttach(BaseView view) {
-        mListView = (ListView) view;
+        listFragmentView = (ListFragmentView) view;
     }
 
     @Override
@@ -49,34 +49,34 @@ public class ListPresenterImpl implements ListPresenter {
 
     @Override
     public void onDetach() {
-        mListView = null;
+        listFragmentView = null;
     }
 
     @Override
     public void requestCoins() {
-        mListView.showProgressBar();
-        mRepository.requestCoins()
+        listFragmentView.showProgressBar();
+        repository.requestCoins()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new SingleObserver<ResponseObject>() {
+                .subscribe(new SingleObserver<RawResponse>() {
                     @Override
                     public void onSubscribe(Disposable d) {
 
                     }
 
                     @Override
-                    public void onSuccess(ResponseObject responseObject) {
-                        mDataObjects = responseObject.getDataObjects();
+                    public void onSuccess(RawResponse rawResponse) {
+                        coinDescriptions = rawResponse.getCoinDescriptions();
 
-                        for (DataObject dataObject : mDataObjects) {
-                            mCoin = dataObject.getCoin();
-                            mCoin.setPrice(dataObject.getCurrency().getUsd().getPrice());
-                            mCoins.add(mCoin);
+                        for (CoinDescription coinDescription : coinDescriptions) {
+                            coin = coinDescription.getCoin();
+                            coin.setPrice(coinDescription.getCurrencies().getUsdCurrency().getPrice());
+                            coins.add(coin);
                         }
 
-                        mListView.showData(mCoins);
-                        mListView.hideProgressBar();
-                        mListView.notifyAdapter();
+                        listFragmentView.showData(coins);
+                        listFragmentView.hideProgressBar();
+                        listFragmentView.notifyAdapter();
                     }
 
                     @Override

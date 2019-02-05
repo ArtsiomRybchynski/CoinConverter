@@ -2,13 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_list"
+        android:id="@+id/navigationList"
         android:icon="@drawable/ic_list_black_24dp"
-        android:title="@string/list"/>
+        android:title="@string/bottom_list_item_title"/>
 
     <item
-        android:id="@+id/navigation_converter"
+        android:id="@+id/navigationConverter"
         android:icon="@drawable/ic_compare_arrows_black_24dp"
-        android:title="@string/converter"/>
+        android:title="@string/bottom_converter_item_title"/>
 
 </menu>

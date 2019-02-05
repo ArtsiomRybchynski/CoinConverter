@@ -1,17 +1,18 @@
 package com.example.testproject.presentation.ui.adapters;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.testproject.R;
-import com.example.testproject.domain.entities.Coin;
+import com.example.testproject.entities.Coin;
 
 import java.util.List;
 
@@ -20,7 +21,8 @@ import butterknife.ButterKnife;
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListHolder> {
 
-    private List<Coin> mCoins;
+    private List<Coin> coins;
+
     @NonNull
     @Override
     public ListHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
@@ -31,41 +33,46 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ListHolder listHolder, int i) {
-        String price = String.valueOf(mCoins.get(i).getPrice()) + " $";
-        String imageUrl = mCoins.get(i).getImageUrl();
-        String name = mCoins.get(i).getName();
-        listHolder.bind(imageUrl, name, price);
+        listHolder.bind(coins.get(i));
     }
 
     @Override
     public int getItemCount() {
-        return mCoins != null ? mCoins.size() : 0;
+        return coins != null ? coins.size() : 0;
     }
 
     public void setData(List<Coin> coins) {
-        mCoins = coins;
+        this.coins = coins;
     }
 
-    static class ListHolder extends RecyclerView.ViewHolder {
+    static class ListHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        private Context mContext;
+        private Context context;
+        private Coin coin;
 
-        @BindView(R.id.iv_currency_icon) ImageView imageView;
-        @BindView(R.id.tv_currency_name) TextView tvName;
-        @BindView(R.id.tv_currency_price) TextView tvPrice;
+        @BindView(R.id.ivCurrencyIcon) ImageView imageView;
+        @BindView(R.id.tvCurrencyName) TextView tvName;
+        @BindView(R.id.tvCurrencyPrice) TextView tvPrice;
 
-        public ListHolder(@NonNull View itemView) {
+        ListHolder(@NonNull View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
-            mContext = itemView.getContext();
+            itemView.setOnClickListener(this);
+            context = itemView.getContext();
         }
 
-        public void bind(String icon, String name, String price) {
-            tvName.setText(name);
-            tvPrice.setText(price);
-            Glide.with(mContext)
-                    .load(icon)
+        void bind(Coin coin) {
+            this.coin = coin;
+            tvName.setText(coin.getName());
+            tvPrice.setText(String.valueOf(coin.getPrice()));
+            Glide.with(context)
+                    .load(coin.getImageUrl())
                     .into(imageView);
+        }
+
+        @Override
+        public void onClick(View v) {
+            Toast.makeText(context, "Click", Toast.LENGTH_SHORT).show();
         }
     }
 }

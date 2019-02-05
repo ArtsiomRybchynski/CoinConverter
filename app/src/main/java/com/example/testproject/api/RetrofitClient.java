@@ -1,6 +1,5 @@
-package com.example.testproject.data.utils;
+package com.example.testproject.api;
 
-import com.example.testproject.data.web.Api;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -8,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class RetrofitClient {
 
     private static final String BASE_URL = "https://min-api.cryptocompare.com/data/";
-    private static RetrofitClient sInstance;
+    private static RetrofitClient instance;
     private Retrofit retrofit;
 
     private RetrofitClient() {
@@ -20,10 +19,10 @@ public class RetrofitClient {
     }
 
     public static synchronized RetrofitClient getInstance() {
-        if (sInstance == null) {
-            sInstance = new RetrofitClient();
+        if (instance == null) {
+            instance = new RetrofitClient();
         }
-        return sInstance;
+        return instance;
     }
 
     public Api getApi() {

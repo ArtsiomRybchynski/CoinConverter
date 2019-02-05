@@ -1,12 +1,12 @@
 package com.example.testproject.presentation.ui.activities;
 
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.TextView;
 
@@ -18,13 +18,18 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    private int mCurrentPageId = R.id.navigation_list;
+    private int currentPageId = R.id.navigationList;
 
-    private FragmentManager mFragmentManager;
+    private FragmentManager fragmentManager;
 
-    @BindView(R.id.bottom_navigation_view) BottomNavigationView mBottomNavigationView;
-    @BindView(R.id.toolbar_list) Toolbar toolbar;
-    @BindView(R.id.tb_title) TextView textView;
+    @BindView(R.id.bottomNavigationView)
+    BottomNavigationView bottomNavigationView;
+
+    @BindView(R.id.tbMainScreen)
+    Toolbar toolbar;
+
+    @BindView(R.id.tbTitle)
+    TextView textView;
 
 
     @Override
@@ -36,30 +41,30 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
-        mFragmentManager = getSupportFragmentManager();
-        beginTransaction(new ListFragment());
+        fragmentManager = getSupportFragmentManager();
+        addFragment(new ListFragment());
 
-        mBottomNavigationView.setOnNavigationItemSelectedListener(
+        bottomNavigationView.setOnNavigationItemSelectedListener(
                 new BottomNavigationView.OnNavigationItemSelectedListener() {
 
                     @Override
                     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                         switch (menuItem.getItemId()) {
-                            case R.id.navigation_list:
-                                if (mCurrentPageId == menuItem.getItemId()) {
+                            case R.id.navigationList:
+                                if (currentPageId == menuItem.getItemId()) {
                                     return false;
                                 } else {
-                                    mCurrentPageId = menuItem.getItemId();
-                                    textView.setText(R.string.currencies_list);
+                                    currentPageId = menuItem.getItemId();
+                                    textView.setText(R.string.toolbar_currencies_list_title);
                                     replaceFragment(new ListFragment());
                                     return true;
                                 }
-                            case R.id.navigation_converter:
-                                if (mCurrentPageId == menuItem.getItemId()) {
+                            case R.id.navigationConverter:
+                                if (currentPageId == menuItem.getItemId()) {
                                     return false;
                                 } else {
-                                    mCurrentPageId = menuItem.getItemId();
-                                    textView.setText(R.string.converter);
+                                    currentPageId = menuItem.getItemId();
+                                    textView.setText(R.string.toolbar_converter_title);
 //                                    replaceFragment(new ListFragment());
                                     return true;
                                 }
@@ -71,15 +76,15 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void beginTransaction(Fragment fragment) {
-        mFragmentManager.beginTransaction()
-                .add(R.id.frame_container, fragment)
+    private void addFragment(Fragment fragment) {
+        fragmentManager.beginTransaction()
+                .add(R.id.frameСontainer, fragment)
                 .commit();
     }
 
     private void replaceFragment(Fragment fragment) {
-        mFragmentManager.beginTransaction()
-                .replace(R.id.frame_container, fragment)
+        fragmentManager.beginTransaction()
+                .replace(R.id.frameСontainer, fragment)
                 .commit();
     }
 }
