@@ -1,4 +1,4 @@
-package com.example.testproject.entities;
+package com.example.testproject.entities.currencies;
 
 import com.example.testproject.entities.currencies.UsdCurrency;
 import com.google.gson.annotations.SerializedName;

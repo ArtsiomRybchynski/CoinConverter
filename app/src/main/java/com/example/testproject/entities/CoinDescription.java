@@ -1,5 +1,6 @@
 package com.example.testproject.entities;
 
+import com.example.testproject.entities.currencies.Currencies;
 import com.google.gson.annotations.SerializedName;
 
 public class CoinDescription {
@@ -7,7 +8,7 @@ public class CoinDescription {
     @SerializedName("CoinInfo")
     private Coin coin;
 
-    @SerializedName("RAW")
+    @SerializedName("DISPLAY")
     private Currencies currencies;
 
     public CoinDescription(Coin coin, Currencies currencies) {
