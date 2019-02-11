@@ -4,6 +4,12 @@
     <string name="bottom_converter_item_title">Converter</string>
     <string name="toolbar_currencies_list_title">Currencies list</string>
     <string name="toolbar_converter_title">Converter</string>
-    <string name="filter">Filter</string>
+    <string name="toolbar_filter">Filter</string>
+    <string name="coin_details">Coin details</string>
+    <string name="coin_icon_description">Coin icon</string>
+    <string name="coin_detail_name">Name:\u0020</string>
+    <string name="coin_detail_full_name">Full name:\u0020</string>
+    <string name="coin_detail_algorithm">Algorithm:\u0020</string>
+    <string name="coin_detail_price">Price:\u0020</string>
 
 </resources>

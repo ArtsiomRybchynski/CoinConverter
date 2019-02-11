@@ -3,6 +3,7 @@ package com.example.testproject.presentation.ui.adapters;
 import android.content.Context;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,9 +11,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
+import com.example.testproject.GlideApp;
 import com.example.testproject.R;
 import com.example.testproject.entities.Coin;
+import com.example.testproject.presentation.ui.activities.CoinDetailActivity;
 
 import java.util.List;
 
@@ -65,14 +67,16 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListHolder> {
             this.coin = coin;
             tvName.setText(coin.getName());
             tvPrice.setText(String.valueOf(coin.getPrice()));
-            Glide.with(context)
+            GlideApp.with(context)
                     .load(coin.getImageUrl())
                     .into(imageView);
         }
 
         @Override
         public void onClick(View v) {
-            Toast.makeText(context, "Click", Toast.LENGTH_SHORT).show();
+            String str = String.valueOf(coin.getId());
+            Toast.makeText(context, str, Toast.LENGTH_SHORT).show();
+            CoinDetailActivity.startActivity(context, coin.getId());
         }
     }
 }

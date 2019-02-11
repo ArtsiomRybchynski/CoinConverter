@@ -14,8 +14,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
 
+import com.example.testproject.App;
 import com.example.testproject.R;
-import com.example.testproject.repositories.RepositoryImpl;
 import com.example.testproject.entities.Coin;
 import com.example.testproject.presentation.presenters.ListPresenter;
 import com.example.testproject.presentation.presenters.impl.ListPresenterImpl;
@@ -57,8 +57,7 @@ public class ListFragment extends Fragment implements ListPresenter.ListFragment
         adapter = new ListAdapter();
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(adapter);
-
-        presenter = new ListPresenterImpl(new RepositoryImpl());
+        presenter = new ListPresenterImpl(App.getRepository());
         presenter.onAttach(this);
         presenter.requestCoins();
     }
@@ -66,6 +65,7 @@ public class ListFragment extends Fragment implements ListPresenter.ListFragment
     @Override
     public void onResume() {
         super.onResume();
+
     }
 
     @Override
@@ -75,13 +75,13 @@ public class ListFragment extends Fragment implements ListPresenter.ListFragment
     }
 
     @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+    public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
         inflater.inflate(R.menu.toolbar_main_activity, menu);
         super.onCreateOptionsMenu(menu, inflater);
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.toolbarFilter: {
                 //action
@@ -111,4 +111,5 @@ public class ListFragment extends Fragment implements ListPresenter.ListFragment
     public void showData(List<Coin> coins) {
         adapter.setData(coins);
     }
+
 }

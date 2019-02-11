@@ -1,0 +1,242 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:2:1-33:12
+MERGED from [com.google.android.material:material:1.1.0-alpha03] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\material-1.1.0-alpha03.aar\40f92674e7bd70c74a6cd5c7005b9e40\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha3] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\constraintlayout-2.0.0-alpha3.aar\824278134a3813a18f438cf3d1e60c35\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.1.0-alpha01] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\appcompat-1.1.0-alpha01.aar\6c9bf990e8556bcca01c3388f4ff9e72\AndroidManifest.xml:17:1-22:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\rxandroid-2.1.0.aar\735bbc885fbc6691f7b55c224bf2de9e\AndroidManifest.xml:15:1-20:12
+MERGED from [androidx.room:room-rxjava2:2.1.0-alpha04] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\room-rxjava2-2.1.0-alpha04.aar\508d1016b488df7e4e5e44d7a4eca3bd\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.room:room-runtime:2.1.0-alpha04] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\room-runtime-2.1.0-alpha04.aar\065ee0c5eb416ff9dc9438509b253c21\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\legacy-support-v4-1.0.0.aar\a3dffe83014c8ed2327ce78477c94cc9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.jakewharton:butterknife:10.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\butterknife-10.0.0.aar\70cc0871d2b39cc2880bb24411bb1dca\AndroidManifest.xml:2:1-7:12
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\jetified-glide-4.8.0.aar\2e8f94c4d67b88f40eda4becc30b9981\AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\cardview-1.0.0.aar\1ce6a5be3bc5410dd9b3909b5dd25d5f\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.0.0.aar\ae47e2a2af19920179518a92689f4979\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\4d27d43810bfc2bca96d761c34d9c27b\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\bb383601a5901f583b4150f3611cf7d2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.1] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\transition-1.0.1.aar\07b7768867e76e2a008270ca02a85397\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite-framework:2.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\sqlite-framework-2.0.0.aar\30126e1b6a31102c1160cb9eb24e2d7d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\sqlite-2.0.0.aar\e5927c72b84e9363cb7dafd745414b03\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.1.0-alpha02] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\fragment-1.1.0-alpha02.aar\cd94c7042dc95fe69a366dbe3c6d3706\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\6cd791154eb09ec52cc3ee56d9296299\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\59a2716b20aa559dc36b163faa2bf16c\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\c037995bd1ddd63856ab0da46a670802\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\518dc2cfda3cfb42152982263463dd4f\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\media-1.0.0.aar\79a7424609fa2ad2541be45916e59fb3\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\c92caff1936c076e6ec1fb13e14816eb\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\0ad2345f5ba43064d488a96c564563b9\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\e0a909318815782e074c5a570d46b0b8\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0-alpha01] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\recyclerview-1.1.0-alpha01.aar\162cc9d78e4dff9f5d9fe725e1b864ed\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-alpha01] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.1.0-alpha01.aar\4595318c891e0f7fa9cc98e8ae241c18\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\ee70413514b4bf7eb9adf9cb2811c11f\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\130a9e8f6b7e4fa662d38c985b840f24\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\6d4e7f9f91d59385e7e66548a2a413e6\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\64403c5e5d874bc9eecf1e8f2ef26ca9\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\0de243e43bf09e04b30fc7e02f7e6e18\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\6ae3ce9f79817be8768c62e2c0e5f442\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\3b647184dbdce0444c158711cb592657\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\b273e5c779d778069ed152875036d5b0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0-alpha02] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\activity-1.0.0-alpha02.aar\0c6b33001cd5878b5b5c3fb2a10346aa\AndroidManifest.xml:17:1-22:12
+MERGED from [com.jakewharton:butterknife-runtime:10.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\butterknife-runtime-10.0.0.aar\4ea48a152f9b53f505c641b469e4a872\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0-alpha01] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.1.0-alpha01.aar\945d4ebdc05a7066cf2d6502307a4e88\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0-alpha03] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\core-1.1.0-alpha03.aar\9bd5e801e64bff68946f1668d0af9c7b\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\d3e89bca64b195da0871e8356c72e824\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.0.0.aar\3c4e09b5de592572160751f836f1d954\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-alpha01] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0-alpha01.aar\065fa2dc0b9c1c1baeb7c8379401c0e7\AndroidManifest.xml:17:1-25:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\jetified-gifdecoder-4.8.0.aar\4c5ea09573471ae69cc0c1a060362273\AndroidManifest.xml:2:1-11:12
+INJECTED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:2:1-33:12
+	package
+		ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:3:5-38
+		INJECTED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml
+		ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:2:1-33:12
+		INJECTED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml
+		ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:2:1-33:12
+		INJECTED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:6:5-76
+	android:name
+		ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:6:22-73
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:7:22-76
+application
+ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:9:5-31:19
+MERGED from [com.google.android.material:material:1.1.0-alpha03] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\material-1.1.0-alpha03.aar\40f92674e7bd70c74a6cd5c7005b9e40\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0-alpha03] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\material-1.1.0-alpha03.aar\40f92674e7bd70c74a6cd5c7005b9e40\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha3] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\constraintlayout-2.0.0-alpha3.aar\824278134a3813a18f438cf3d1e60c35\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha3] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\constraintlayout-2.0.0-alpha3.aar\824278134a3813a18f438cf3d1e60c35\AndroidManifest.xml:9:5-20
+MERGED from [androidx.room:room-runtime:2.1.0-alpha04] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\room-runtime-2.1.0-alpha04.aar\065ee0c5eb416ff9dc9438509b253c21\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.room:room-runtime:2.1.0-alpha04] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\room-runtime-2.1.0-alpha04.aar\065ee0c5eb416ff9dc9438509b253c21\AndroidManifest.xml:22:5-26:19
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\jetified-glide-4.8.0.aar\2e8f94c4d67b88f40eda4becc30b9981\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\jetified-glide-4.8.0.aar\2e8f94c4d67b88f40eda4becc30b9981\AndroidManifest.xml:10:5-20
+MERGED from [androidx.core:core:1.1.0-alpha03] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\core-1.1.0-alpha03.aar\9bd5e801e64bff68946f1668d0af9c7b\AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.1.0-alpha03] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\core-1.1.0-alpha03.aar\9bd5e801e64bff68946f1668d0af9c7b\AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-alpha01] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0-alpha01.aar\065fa2dc0b9c1c1baeb7c8379401c0e7\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-alpha01] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0-alpha01.aar\065fa2dc0b9c1c1baeb7c8379401c0e7\AndroidManifest.xml:22:5-23:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\jetified-gifdecoder-4.8.0.aar\4c5ea09573471ae69cc0c1a060362273\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\jetified-gifdecoder-4.8.0.aar\4c5ea09573471ae69cc0c1a060362273\AndroidManifest.xml:9:5-20
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0-alpha03] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\core-1.1.0-alpha03.aar\9bd5e801e64bff68946f1668d0af9c7b\AndroidManifest.xml:22:18-86
+	android:label
+		ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:12:9-41
+	android:roundIcon
+		ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:13:9-54
+	android:icon
+		ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:11:9-43
+	android:theme
+		ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:14:9-40
+	android:name
+		ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:10:9-28
+activity#com.example.testproject.presentation.ui.activities.MainActivity
+ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:15:9-17:51
+	android:screenOrientation
+		ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:17:13-49
+	android:name
+		ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:16:13-68
+activity#com.example.testproject.presentation.ui.activities.SplashScreenActivity
+ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:18:9-27:20
+	android:screenOrientation
+		ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:21:13-49
+	android:theme
+		ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:20:13-53
+	android:name
+		ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:19:13-76
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:22:13-26:29
+action#android.intent.action.MAIN
+ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:23:17-69
+	android:name
+		ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:23:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:25:17-77
+	android:name
+		ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:25:27-74
+activity#com.example.testproject.presentation.ui.activities.CoinDetailActivity
+ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:28:9-30:51
+	android:screenOrientation
+		ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:30:13-49
+	android:name
+		ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml:29:13-74
+uses-sdk
+INJECTED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml
+INJECTED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.1.0-alpha03] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\material-1.1.0-alpha03.aar\40f92674e7bd70c74a6cd5c7005b9e40\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0-alpha03] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\material-1.1.0-alpha03.aar\40f92674e7bd70c74a6cd5c7005b9e40\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha3] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\constraintlayout-2.0.0-alpha3.aar\824278134a3813a18f438cf3d1e60c35\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha3] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\constraintlayout-2.0.0-alpha3.aar\824278134a3813a18f438cf3d1e60c35\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.1.0-alpha01] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\appcompat-1.1.0-alpha01.aar\6c9bf990e8556bcca01c3388f4ff9e72\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0-alpha01] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\appcompat-1.1.0-alpha01.aar\6c9bf990e8556bcca01c3388f4ff9e72\AndroidManifest.xml:20:5-44
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\rxandroid-2.1.0.aar\735bbc885fbc6691f7b55c224bf2de9e\AndroidManifest.xml:18:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\rxandroid-2.1.0.aar\735bbc885fbc6691f7b55c224bf2de9e\AndroidManifest.xml:18:5-43
+MERGED from [androidx.room:room-rxjava2:2.1.0-alpha04] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\room-rxjava2-2.1.0-alpha04.aar\508d1016b488df7e4e5e44d7a4eca3bd\AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-rxjava2:2.1.0-alpha04] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\room-rxjava2-2.1.0-alpha04.aar\508d1016b488df7e4e5e44d7a4eca3bd\AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-runtime:2.1.0-alpha04] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\room-runtime-2.1.0-alpha04.aar\065ee0c5eb416ff9dc9438509b253c21\AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-runtime:2.1.0-alpha04] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\room-runtime-2.1.0-alpha04.aar\065ee0c5eb416ff9dc9438509b253c21\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\legacy-support-v4-1.0.0.aar\a3dffe83014c8ed2327ce78477c94cc9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\legacy-support-v4-1.0.0.aar\a3dffe83014c8ed2327ce78477c94cc9\AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton:butterknife:10.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\butterknife-10.0.0.aar\70cc0871d2b39cc2880bb24411bb1dca\AndroidManifest.xml:5:5-44
+MERGED from [com.jakewharton:butterknife:10.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\butterknife-10.0.0.aar\70cc0871d2b39cc2880bb24411bb1dca\AndroidManifest.xml:5:5-44
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\jetified-glide-4.8.0.aar\2e8f94c4d67b88f40eda4becc30b9981\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\jetified-glide-4.8.0.aar\2e8f94c4d67b88f40eda4becc30b9981\AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\cardview-1.0.0.aar\1ce6a5be3bc5410dd9b3909b5dd25d5f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\cardview-1.0.0.aar\1ce6a5be3bc5410dd9b3909b5dd25d5f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.0.0.aar\ae47e2a2af19920179518a92689f4979\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.0.0.aar\ae47e2a2af19920179518a92689f4979\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\4d27d43810bfc2bca96d761c34d9c27b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\4d27d43810bfc2bca96d761c34d9c27b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\bb383601a5901f583b4150f3611cf7d2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\bb383601a5901f583b4150f3611cf7d2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.1] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\transition-1.0.1.aar\07b7768867e76e2a008270ca02a85397\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.1] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\transition-1.0.1.aar\07b7768867e76e2a008270ca02a85397\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\sqlite-framework-2.0.0.aar\30126e1b6a31102c1160cb9eb24e2d7d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\sqlite-framework-2.0.0.aar\30126e1b6a31102c1160cb9eb24e2d7d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\sqlite-2.0.0.aar\e5927c72b84e9363cb7dafd745414b03\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\sqlite-2.0.0.aar\e5927c72b84e9363cb7dafd745414b03\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0-alpha02] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\fragment-1.1.0-alpha02.aar\cd94c7042dc95fe69a366dbe3c6d3706\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0-alpha02] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\fragment-1.1.0-alpha02.aar\cd94c7042dc95fe69a366dbe3c6d3706\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\6cd791154eb09ec52cc3ee56d9296299\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\6cd791154eb09ec52cc3ee56d9296299\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\59a2716b20aa559dc36b163faa2bf16c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\59a2716b20aa559dc36b163faa2bf16c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\c037995bd1ddd63856ab0da46a670802\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\c037995bd1ddd63856ab0da46a670802\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\518dc2cfda3cfb42152982263463dd4f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\518dc2cfda3cfb42152982263463dd4f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\media-1.0.0.aar\79a7424609fa2ad2541be45916e59fb3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\media-1.0.0.aar\79a7424609fa2ad2541be45916e59fb3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\c92caff1936c076e6ec1fb13e14816eb\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\c92caff1936c076e6ec1fb13e14816eb\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\0ad2345f5ba43064d488a96c564563b9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\0ad2345f5ba43064d488a96c564563b9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\e0a909318815782e074c5a570d46b0b8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\e0a909318815782e074c5a570d46b0b8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0-alpha01] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\recyclerview-1.1.0-alpha01.aar\162cc9d78e4dff9f5d9fe725e1b864ed\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0-alpha01] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\recyclerview-1.1.0-alpha01.aar\162cc9d78e4dff9f5d9fe725e1b864ed\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-alpha01] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.1.0-alpha01.aar\4595318c891e0f7fa9cc98e8ae241c18\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-alpha01] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.1.0-alpha01.aar\4595318c891e0f7fa9cc98e8ae241c18\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\ee70413514b4bf7eb9adf9cb2811c11f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\ee70413514b4bf7eb9adf9cb2811c11f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\130a9e8f6b7e4fa662d38c985b840f24\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\130a9e8f6b7e4fa662d38c985b840f24\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\6d4e7f9f91d59385e7e66548a2a413e6\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\6d4e7f9f91d59385e7e66548a2a413e6\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\64403c5e5d874bc9eecf1e8f2ef26ca9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\64403c5e5d874bc9eecf1e8f2ef26ca9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\0de243e43bf09e04b30fc7e02f7e6e18\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\0de243e43bf09e04b30fc7e02f7e6e18\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\6ae3ce9f79817be8768c62e2c0e5f442\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\6ae3ce9f79817be8768c62e2c0e5f442\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\3b647184dbdce0444c158711cb592657\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\3b647184dbdce0444c158711cb592657\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\b273e5c779d778069ed152875036d5b0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\b273e5c779d778069ed152875036d5b0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0-alpha02] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\activity-1.0.0-alpha02.aar\0c6b33001cd5878b5b5c3fb2a10346aa\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0-alpha02] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\activity-1.0.0-alpha02.aar\0c6b33001cd5878b5b5c3fb2a10346aa\AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton:butterknife-runtime:10.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\butterknife-runtime-10.0.0.aar\4ea48a152f9b53f505c641b469e4a872\AndroidManifest.xml:5:5-44
+MERGED from [com.jakewharton:butterknife-runtime:10.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\butterknife-runtime-10.0.0.aar\4ea48a152f9b53f505c641b469e4a872\AndroidManifest.xml:5:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0-alpha01] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.1.0-alpha01.aar\945d4ebdc05a7066cf2d6502307a4e88\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0-alpha01] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.1.0-alpha01.aar\945d4ebdc05a7066cf2d6502307a4e88\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0-alpha03] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\core-1.1.0-alpha03.aar\9bd5e801e64bff68946f1668d0af9c7b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0-alpha03] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\core-1.1.0-alpha03.aar\9bd5e801e64bff68946f1668d0af9c7b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\d3e89bca64b195da0871e8356c72e824\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\d3e89bca64b195da0871e8356c72e824\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.0.0.aar\3c4e09b5de592572160751f836f1d954\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.0.0.aar\3c4e09b5de592572160751f836f1d954\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-alpha01] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0-alpha01.aar\065fa2dc0b9c1c1baeb7c8379401c0e7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-alpha01] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0-alpha01.aar\065fa2dc0b9c1c1baeb7c8379401c0e7\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\jetified-gifdecoder-4.8.0.aar\4c5ea09573471ae69cc0c1a060362273\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\jetified-gifdecoder-4.8.0.aar\4c5ea09573471ae69cc0c1a060362273\AndroidManifest.xml:5:5-7:41
+INJECTED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml
+INJECTED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml
+		ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml
+		ADDED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android_projects\TestProject\app\src\main\AndroidManifest.xml
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.1.0-alpha04] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\room-runtime-2.1.0-alpha04.aar\065ee0c5eb416ff9dc9438509b253c21\AndroidManifest.xml:23:9-25:40
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.1.0-alpha04] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\room-runtime-2.1.0-alpha04.aar\065ee0c5eb416ff9dc9438509b253c21\AndroidManifest.xml:25:13-37
+	android:name
+		ADDED from [androidx.room:room-runtime:2.1.0-alpha04] C:\Users\Artsiom\.gradle\caches\transforms-1\files-1.1\room-runtime-2.1.0-alpha04.aar\065ee0c5eb416ff9dc9438509b253c21\AndroidManifest.xml:24:13-74

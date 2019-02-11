@@ -1,7 +1,5 @@
 package com.example.testproject.entities;
 
-import android.net.Uri;
-
 import com.google.gson.annotations.SerializedName;
 
 import androidx.room.Entity;
@@ -12,9 +10,13 @@ import androidx.room.PrimaryKey;
 public class Coin {
 
     @Ignore
-    private static final String IMAGE_BASE_URL = "https://www.cryptocompare.com";
+    public static final String BASE_IMAGE_URL = "https://www.cryptocompare.com";
 
-    @Ignore
+    private String price;
+
+    @PrimaryKey(autoGenerate = true)
+    private int id;
+
     @SerializedName("ImageUrl")
     private String imageUrl;
 
@@ -27,13 +29,6 @@ public class Coin {
     @SerializedName("Algorithm")
     private String algorithm;
 
-    @PrimaryKey(autoGenerate = true)
-    private int id;
-
-    private String imageUri;
-
-    private String price;
-
     public int getId() {
         return id;
     }
@@ -43,7 +38,7 @@ public class Coin {
     }
 
     public String getImageUrl() {
-        return IMAGE_BASE_URL.concat(imageUrl);
+        return imageUrl;
     }
 
     public String getFullName() {
@@ -58,9 +53,6 @@ public class Coin {
         return price;
     }
 
-    public String getImageUri() {
-        return imageUri;
-    }
 
     public void setId(int id) {
         this.id = id;
@@ -84,9 +76,5 @@ public class Coin {
 
     public void setAlgorithm(String algorithm) {
         this.algorithm = algorithm;
-    }
-
-    public void setImageUri(String imageUri) {
-        this.imageUri = imageUri;
     }
 }
