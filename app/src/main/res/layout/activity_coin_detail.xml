@@ -26,7 +26,8 @@
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginEnd="0dp"
-                android:background="@color/colorPrimary" />
+                android:background="@color/colorPrimary"
+                android:theme="@style/ToolbarColorSecondary"/>
 
             <TextView
                 android:id="@+id/tbTitle"
@@ -58,7 +59,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_margin="10dp"
-            android:layout_gravity="right"
+            android:layout_gravity="end"
             tools:src="@drawable/ic_bitcoin_symbol_inside_circulating_arrows"
             android:contentDescription="@string/coin_icon_description" />
 

@@ -16,10 +16,13 @@ public interface Repository {
 
     Single<List<Coin>> getAllCoins();
 
+    Single<List<Coin>> getFilterCoins();
+
     void insertCoins(List<Coin> coins);
 
     void updateCoinTable(List<Coin> coins);
 
+    void updateCoins(List<Coin> coins);
 
     void setRemoteSource(RemoteDataSource remoteSource);
     void setLocalSource(LocalDataSource localSource);

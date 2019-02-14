@@ -1,25 +1,30 @@
 package com.example.testproject.presentation.ui.activities;
 
+import com.example.testproject.utils.Router;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import androidx.fragment.app.Fragment;
+
+import androidx.annotation.Nullable;
 import androidx.fragment.app.FragmentManager;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.widget.Toolbar;
 import android.widget.TextView;
 
 import com.example.testproject.R;
-import com.example.testproject.presentation.ui.fragments.ListFragment;
+
+import java.util.Objects;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    private int currentPageId = R.id.navigationList;
+    private static final int REQUEST_CODE_COIN_FILTER = 0;
+
+    private static final String LIST_FRAGMENT_TAG = "list fragment tag";
+    private static final String CONVERTER_FRAGMENT_TAG = "converter fragment tag";
 
     private FragmentManager fragmentManager;
 
@@ -43,51 +48,34 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         fragmentManager = getSupportFragmentManager();
-        addFragment(new ListFragment());
+        Router.openFragment(fragmentManager, LIST_FRAGMENT_TAG, R.id.frameСontainer);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(
                 menuItem -> {
                     switch (menuItem.getItemId()) {
                         case R.id.navigationList:
-                            if (currentPageId == menuItem.getItemId()) {
-                                return false;
-                            } else {
-                                currentPageId = menuItem.getItemId();
-                                textView.setText(R.string.toolbar_currencies_list_title);
-                                replaceFragment(new ListFragment());
-                                return true;
-                            }
+                            textView.setText(R.string.toolbar_currencies_list_title);
+                            Router.openFragment(fragmentManager, LIST_FRAGMENT_TAG,
+                                    R.id.frameСontainer);
+                            return true;
+
                         case R.id.navigationConverter:
-                            if (currentPageId == menuItem.getItemId()) {
-                                return false;
-                            } else {
-                                currentPageId = menuItem.getItemId();
-                                textView.setText(R.string.toolbar_converter_title);
-//                                    replaceFragment(new ListFragment());
-                                return true;
-                            }
+                            textView.setText(R.string.toolbar_converter_title);
+                            //Todo вызов фрагмента конвертера
+                            return true;
                     }
                     return false;
                 }
         );
-
     }
 
-    private void addFragment(Fragment fragment) {
-        fragmentManager.beginTransaction()
-                .add(R.id.frameСontainer, fragment)
-                .commit();
-    }
-
-    private void replaceFragment(Fragment fragment) {
-        fragmentManager.beginTransaction()
-                .replace(R.id.frameСontainer, fragment)
-                .commit();
-    }
-
-    public static void startActivity(Context context) {
-        Intent intent = new Intent(context, CoinDetailActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        context.startActivity(intent);
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode != RESULT_OK) return;
+        if (requestCode == REQUEST_CODE_COIN_FILTER) {
+            Objects.requireNonNull(fragmentManager.findFragmentByTag(LIST_FRAGMENT_TAG))
+                    .onActivityResult(requestCode, resultCode, data);
+        }
     }
 }

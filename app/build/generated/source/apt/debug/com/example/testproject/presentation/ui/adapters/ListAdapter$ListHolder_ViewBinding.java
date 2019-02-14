@@ -19,9 +19,9 @@ public class ListAdapter$ListHolder_ViewBinding implements Unbinder {
   public ListAdapter$ListHolder_ViewBinding(ListAdapter.ListHolder target, View source) {
     this.target = target;
 
-    target.imageView = Utils.findRequiredViewAsType(source, R.id.ivCurrencyIcon, "field 'imageView'", ImageView.class);
-    target.tvName = Utils.findRequiredViewAsType(source, R.id.tvCurrencyName, "field 'tvName'", TextView.class);
-    target.tvPrice = Utils.findRequiredViewAsType(source, R.id.tvCurrencyPrice, "field 'tvPrice'", TextView.class);
+    target.imageView = Utils.findRequiredViewAsType(source, R.id.ivCoinIcon, "field 'imageView'", ImageView.class);
+    target.tvName = Utils.findRequiredViewAsType(source, R.id.tvCoinName, "field 'tvName'", TextView.class);
+    target.tvPrice = Utils.findRequiredViewAsType(source, R.id.tvCoinPrice, "field 'tvPrice'", TextView.class);
   }
 
   @Override

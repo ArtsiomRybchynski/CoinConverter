@@ -7,7 +7,7 @@ import io.reactivex.Single;
 
 public class RemoteDataSourceImpl implements RemoteDataSource {
 
-    private static final int DEFAULT_COINS_LIMIT = 100;
+    private static final int DEFAULT_COINS_LIMIT = 10;
     private static final String DEFAULT_CURRENCY = "USD";
     @Override
     public Single<RawResponse> requestCoins() {

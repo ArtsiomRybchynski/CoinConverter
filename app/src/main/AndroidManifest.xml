@@ -14,11 +14,11 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".presentation.ui.activities.MainActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".presentation.ui.activities.SplashScreenActivity"
-            android:theme="@style/SplashScreenTheme"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashScreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,7 +27,8 @@
         </activity>
         <activity
             android:name=".presentation.ui.activities.CoinDetailActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
+        <activity android:name=".presentation.ui.activities.CoinFilterActivity"></activity>
     </application>
 
 </manifest>

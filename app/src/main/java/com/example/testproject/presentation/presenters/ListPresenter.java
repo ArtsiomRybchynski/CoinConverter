@@ -9,6 +9,7 @@ import java.util.List;
 public interface ListPresenter extends BasePresenter {
 
     void requestCoins();
+    void getFilterCoins();
 
     interface ListFragmentView extends BaseView {
         void notifyAdapter();

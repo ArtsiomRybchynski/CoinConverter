@@ -15,10 +15,13 @@ public interface LocalDataSource {
 
     Single<List<Coin>> getAllCoins();
 
+    Single<List<Coin>> getFilterCoins();
+
     void insertCoins(List<Coin> coins);
 
     void updateCoinTable(List<Coin> coins);
 
-    void deleteAllCoins();
+    void updateCoins(List<Coin> coins);
 
+    void deleteAllCoins();
 }

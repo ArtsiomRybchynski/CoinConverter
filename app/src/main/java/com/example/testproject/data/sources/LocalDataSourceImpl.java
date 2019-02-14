@@ -25,6 +25,11 @@ public class LocalDataSourceImpl implements LocalDataSource {
     }
 
     @Override
+    public Single<List<Coin>> getFilterCoins() {
+        return database.coinDao().getFilterCoins();
+    }
+
+    @Override
     public void insertCoins(List<Coin> coins) {
         database.coinDao().insertCoins(coins);
     }
@@ -32,6 +37,11 @@ public class LocalDataSourceImpl implements LocalDataSource {
     @Override
     public void updateCoinTable(List<Coin> coins) {
         database.coinDao().updateCoinTable(coins);
+    }
+
+    @Override
+    public void updateCoins(List<Coin> coins) {
+        database.coinDao().updateCoins(coins);
     }
 
     @Override

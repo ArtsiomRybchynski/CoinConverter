@@ -47,6 +47,11 @@ public class RepositoryImpl implements Repository {
     }
 
     @Override
+    public Single<List<Coin>> getFilterCoins() {
+        return localSource.getFilterCoins();
+    }
+
+    @Override
     public void insertCoins(List<Coin> coins) {
         localSource.insertCoins(coins);
     }
@@ -54,6 +59,11 @@ public class RepositoryImpl implements Repository {
     @Override
     public void updateCoinTable(List<Coin> coins) {
         localSource.updateCoinTable(coins);
+    }
+
+    @Override
+    public void updateCoins(List<Coin> coins) {
+        localSource.updateCoins(coins);
     }
 
     @Override

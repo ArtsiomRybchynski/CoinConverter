@@ -1,5 +1,7 @@
 package com.example.testproject.presentation.ui.fragments;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,6 +22,7 @@ import com.example.testproject.entities.Coin;
 import com.example.testproject.presentation.presenters.ListPresenter;
 import com.example.testproject.presentation.presenters.impl.ListPresenterImpl;
 import com.example.testproject.presentation.ui.adapters.ListAdapter;
+import com.example.testproject.utils.Router;
 
 import java.util.List;
 
@@ -27,6 +30,8 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class ListFragment extends Fragment implements ListPresenter.ListFragmentView {
+
+    private static final int REQUEST_CODE_COIN_FILTER = 0;
 
     @BindView(R.id.progressBarList)
     ProgressBar progressBar;
@@ -54,9 +59,8 @@ public class ListFragment extends Fragment implements ListPresenter.ListFragment
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        adapter = new ListAdapter();
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        recyclerView.setAdapter(adapter);
+        initAdapter();
+
         presenter = new ListPresenterImpl(App.getRepository());
         presenter.onAttach(this);
         presenter.requestCoins();
@@ -84,12 +88,20 @@ public class ListFragment extends Fragment implements ListPresenter.ListFragment
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.toolbarFilter: {
-                //action
-                break;
+                Router.openCoinFilterActivity(REQUEST_CODE_COIN_FILTER, getActivity());
+                return true;
             }
-
         }
         return false;
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode != Activity.RESULT_OK) return;
+        if (requestCode == REQUEST_CODE_COIN_FILTER) {
+            presenter.getFilterCoins();
+        }
     }
 
     @Override
@@ -112,4 +124,9 @@ public class ListFragment extends Fragment implements ListPresenter.ListFragment
         adapter.setData(coins);
     }
 
+    private void initAdapter() {
+        adapter = new ListAdapter();
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        recyclerView.setAdapter(adapter);
+    }
 }

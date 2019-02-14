@@ -14,7 +14,7 @@ import android.widget.Toast;
 import com.example.testproject.GlideApp;
 import com.example.testproject.R;
 import com.example.testproject.entities.Coin;
-import com.example.testproject.presentation.ui.activities.CoinDetailActivity;
+import com.example.testproject.utils.Router;
 
 import java.util.List;
 
@@ -29,7 +29,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListHolder> {
     @Override
     public ListHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         View view = LayoutInflater.from(viewGroup.getContext())
-                .inflate(R.layout.list_currency_layout, viewGroup, false);
+                .inflate(R.layout.list_coin_layout, viewGroup, false);
         return new ListHolder(view);
     }
 
@@ -52,9 +52,9 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListHolder> {
         private Context context;
         private Coin coin;
 
-        @BindView(R.id.ivCurrencyIcon) ImageView imageView;
-        @BindView(R.id.tvCurrencyName) TextView tvName;
-        @BindView(R.id.tvCurrencyPrice) TextView tvPrice;
+        @BindView(R.id.ivCoinIcon) ImageView imageView;
+        @BindView(R.id.tvCoinName) TextView tvName;
+        @BindView(R.id.tvCoinPrice) TextView tvPrice;
 
         ListHolder(@NonNull View itemView) {
             super(itemView);
@@ -76,7 +76,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListHolder> {
         public void onClick(View v) {
             String str = String.valueOf(coin.getId());
             Toast.makeText(context, str, Toast.LENGTH_SHORT).show();
-            CoinDetailActivity.startActivity(context, coin.getId());
+            Router.openCoinDetailActivity(context, coin.getId());
         }
     }
 }

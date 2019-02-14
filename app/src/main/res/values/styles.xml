@@ -11,4 +11,9 @@
     <style name="SplashScreenTheme" parent="AppTheme">
         <item name="android:windowBackground">@drawable/launch_screen</item>
     </style>
+
+    <style name="ToolbarColorSecondary" parent="AppTheme">
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
 </resources>

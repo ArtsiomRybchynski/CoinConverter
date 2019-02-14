@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/saveChangesButton"
+        android:icon="@drawable/ic_check_white_24dp"
+        android:title="@string/toolbar_filter_save_changes"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/selectAllButton"
+        android:title="@string/toolbar_filter_select_all"
+        app:showAsAction="collapseActionView"/>
+
+    <item
+        android:id="@+id/removeAllButton"
+        android:title="@string/toolbar_filter_remove_all"
+        app:showAsAction="collapseActionView"/>
+
+</menu>

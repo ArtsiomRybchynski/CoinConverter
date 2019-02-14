@@ -1,7 +1,5 @@
 package com.example.testproject.presentation.ui.activities;
 
-import android.content.Intent;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
@@ -13,6 +11,7 @@ import com.example.testproject.data.sources.LocalDataSource;
 import com.example.testproject.data.sources.LocalDataSourceImpl;
 import com.example.testproject.data.sources.RemoteDataSourceImpl;
 import com.example.testproject.data.sources.database.AppDatabase;
+import com.example.testproject.utils.Router;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
@@ -29,7 +28,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         App.getRepository().setLocalSource(localDataSource);
         App.getRepository().setRemoteSource(new RemoteDataSourceImpl());
 
-        MainActivity.startActivity(this);
+        Router.openMainActivity(this);
         finish();
     }
 }

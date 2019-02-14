@@ -54,6 +54,15 @@ public class ListPresenterImpl implements ListPresenter {
                 .subscribe(new WebSingleObserver());
     }
 
+    @Override
+    public void getFilterCoins() {
+        listFragmentView.showProgressBar();
+        repository.getFilterCoins()
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new DatabaseSingleObserver());
+    }
+
     private class WebSingleObserver extends DisposableSingleObserver<List<Coin>>{
 
         @Override

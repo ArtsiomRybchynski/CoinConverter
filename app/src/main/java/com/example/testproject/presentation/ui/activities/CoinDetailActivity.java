@@ -5,8 +5,6 @@ import androidx.appcompat.widget.Toolbar;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -49,10 +47,10 @@ public class CoinDetailActivity extends AppCompatActivity implements
         setContentView(R.layout.activity_coin_detail);
         ButterKnife.bind(this);
 
+        initToolbar();
+
         presenter = new CoinDetailPresenterImpl(App.getRepository());
         presenter.onAttach(this);
-
-        initToolbar();
     }
 
     @Override
@@ -98,16 +96,9 @@ public class CoinDetailActivity extends AppCompatActivity implements
     }
 
     private void initToolbar() {
-        toolbar.setNavigationIcon(R.drawable.ic_arrow_back_black_24dp);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-    }
-
-    public static void startActivity(Context context, int id) {
-        Intent intent = new Intent(context, CoinDetailActivity.class);
-        intent.putExtra(COIN_ID, id);
-        context.startActivity(intent);
     }
 }

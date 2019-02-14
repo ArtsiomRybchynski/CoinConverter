@@ -37,6 +37,7 @@
         <activity
             android:name="com.example.testproject.presentation.ui.activities.CoinDetailActivity"
             android:screenOrientation="portrait" />
+        <activity android:name="com.example.testproject.presentation.ui.activities.CoinFilterActivity" />
 
         <service
             android:name="androidx.room.MultiInstanceInvalidationService"

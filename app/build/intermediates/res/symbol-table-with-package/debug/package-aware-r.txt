@@ -1267,8 +1267,8 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
-drawable ic_arrow_back_black_24dp
 drawable ic_bitcoin_symbol_inside_circulating_arrows
+drawable ic_check_white_24dp
 drawable ic_compare_arrows_black_24dp
 drawable ic_filter_list_black_24dp
 drawable ic_launcher_background
@@ -1308,6 +1308,7 @@ id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
 id abCoinDetailScreen
+id abFilterScreen
 id abMainScreen
 id accelerate
 id accessibility_action_clickable_span
@@ -1383,6 +1384,7 @@ id center
 id center_horizontal
 id center_vertical
 id chains
+id checkBoxFilter
 id checkbox
 id checked
 id chip
@@ -1455,7 +1457,7 @@ id invisible
 id italic
 id item_touch_helper_previous_elevation
 id ivCoinIcon
-id ivCurrencyIcon
+id ivCoinIconFilter
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -1505,11 +1507,14 @@ id radio
 id ratio
 id rectangles
 id recyclerViewList
+id removeAllButton
 id reverseSawtooth
 id right
 id right_icon
 id right_side
 id rounded
+id rvFilterList
+id saveChangesButton
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
@@ -1531,6 +1536,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id selectAllButton
 id select_dialog_listview
 id selected
 id shortcut
@@ -1571,8 +1577,10 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tbCoinDetailScreen
+id tbFilterScreen
 id tbMainScreen
 id tbTitle
+id tbTitleFilter
 id text
 id text2
 id textSpacerNoButtons
@@ -1602,9 +1610,9 @@ id triangle
 id tvCoinAlgorithm
 id tvCoinFullName
 id tvCoinName
+id tvCoinNameFilter
+id tvCoinPrice
 id tvCoinPriceUsd
-id tvCurrencyName
-id tvCurrencyPrice
 id unchecked
 id uniform
 id unlabeled
@@ -1671,6 +1679,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_coin_detail
+layout activity_coin_filter
 layout activity_main
 layout activity_splash_screen
 layout custom_dialog
@@ -1689,7 +1698,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout fragment_list
-layout list_currency_layout
+layout list_coin_filter_layout
+layout list_coin_layout
 layout material_alert_dialog
 layout material_alert_dialog_title
 layout mtrl_layout_snackbar
@@ -1716,6 +1726,7 @@ layout support_simple_spinner_dropdown_item
 layout test_action_chip
 layout test_reflow_chipgroup
 menu bottom_navigation
+menu toolbar_coin_filter_activity
 menu toolbar_main_activity
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -1776,6 +1787,9 @@ string status_bar_notification_info_overflow
 string toolbar_converter_title
 string toolbar_currencies_list_title
 string toolbar_filter
+string toolbar_filter_remove_all
+string toolbar_filter_save_changes
+string toolbar_filter_select_all
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
@@ -2216,6 +2230,7 @@ style ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox
 style ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense
 style ThemeOverlay_MaterialComponents_Toolbar_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Surface
+style ToolbarColorSecondary
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar

@@ -152,12 +152,12 @@
         "source": "C:\\Users\\Artsiom\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0-alpha01.aar\\6c9bf990e8556bcca01c3388f4ff9e72\\res\\interpolator\\btn_checkbox_checked_mtrl_animation_interpolator_1.xml"
     },
     {
-        "merged": "D:\\Android_projects\\TestProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "D:\\Android_projects\\TestProject\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "D:\\Android_projects\\TestProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "C:\\Users\\Artsiom\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0-alpha01.aar\\6c9bf990e8556bcca01c3388f4ff9e72\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "D:\\Android_projects\\TestProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\Android_projects\\TestProject\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
         "merged": "D:\\Android_projects\\TestProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
@@ -278,6 +278,10 @@
     {
         "merged": "D:\\Android_projects\\TestProject\\app\\build\\intermediates\\res\\merged\\debug\\layout-watch-v20_abc_alert_dialog_title_material.xml.flat",
         "source": "C:\\Users\\Artsiom\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0-alpha01.aar\\6c9bf990e8556bcca01c3388f4ff9e72\\res\\layout-watch-v20\\abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "D:\\Android_projects\\TestProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_coin_filter.xml.flat",
+        "source": "D:\\Android_projects\\TestProject\\app\\src\\main\\res\\layout\\activity_coin_filter.xml"
     },
     {
         "merged": "D:\\Android_projects\\TestProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -972,6 +976,10 @@
         "source": "C:\\Users\\Artsiom\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0-alpha01.aar\\6c9bf990e8556bcca01c3388f4ff9e72\\res\\anim\\abc_tooltip_enter.xml"
     },
     {
+        "merged": "D:\\Android_projects\\TestProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_check_white_24dp.xml.flat",
+        "source": "D:\\Android_projects\\TestProject\\app\\src\\main\\res\\drawable\\ic_check_white_24dp.xml"
+    },
+    {
         "merged": "D:\\Android_projects\\TestProject\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_bottom_nav_item_tint.xml.flat",
         "source": "C:\\Users\\Artsiom\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.1.0-alpha03.aar\\40f92674e7bd70c74a6cd5c7005b9e40\\res\\color\\mtrl_bottom_nav_item_tint.xml"
     },
@@ -1078,10 +1086,6 @@
     {
         "merged": "D:\\Android_projects\\TestProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mtrl_checked_circle.xml.flat",
         "source": "C:\\Users\\Artsiom\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.1.0-alpha03.aar\\40f92674e7bd70c74a6cd5c7005b9e40\\res\\drawable\\ic_mtrl_checked_circle.xml"
-    },
-    {
-        "merged": "D:\\Android_projects\\TestProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_currency_layout.xml.flat",
-        "source": "D:\\Android_projects\\TestProject\\app\\src\\main\\res\\layout\\list_currency_layout.xml"
     },
     {
         "merged": "D:\\Android_projects\\TestProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
@@ -1362,6 +1366,10 @@
     {
         "merged": "D:\\Android_projects\\TestProject\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_btn_colored_borderless_text_material.xml.flat",
         "source": "C:\\Users\\Artsiom\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0-alpha01.aar\\6c9bf990e8556bcca01c3388f4ff9e72\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "D:\\Android_projects\\TestProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_coin_filter_layout.xml.flat",
+        "source": "D:\\Android_projects\\TestProject\\app\\src\\main\\res\\layout\\list_coin_filter_layout.xml"
     },
     {
         "merged": "D:\\Android_projects\\TestProject\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_error.xml.flat",
@@ -1708,6 +1716,10 @@
         "source": "C:\\Users\\Artsiom\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.1.0-alpha03.aar\\40f92674e7bd70c74a6cd5c7005b9e40\\res\\color\\mtrl_card_view_ripple.xml"
     },
     {
+        "merged": "D:\\Android_projects\\TestProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_coin_layout.xml.flat",
+        "source": "D:\\Android_projects\\TestProject\\app\\src\\main\\res\\layout\\list_coin_layout.xml"
+    },
+    {
         "merged": "D:\\Android_projects\\TestProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "D:\\Android_projects\\TestProject\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
@@ -1814,6 +1826,10 @@
     {
         "merged": "D:\\Android_projects\\TestProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg_low.xml.flat",
         "source": "C:\\Users\\Artsiom\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.1.0-alpha03.aar\\9bd5e801e64bff68946f1668d0af9c7b\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "D:\\Android_projects\\TestProject\\app\\build\\intermediates\\res\\merged\\debug\\menu_toolbar_coin_filter_activity.xml.flat",
+        "source": "D:\\Android_projects\\TestProject\\app\\src\\main\\res\\menu\\toolbar_coin_filter_activity.xml"
     },
     {
         "merged": "D:\\Android_projects\\TestProject\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_snackbar_out.xml.flat",
@@ -1942,10 +1958,6 @@
     {
         "merged": "D:\\Android_projects\\TestProject\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_box_stroke_color.xml.flat",
         "source": "C:\\Users\\Artsiom\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.1.0-alpha03.aar\\40f92674e7bd70c74a6cd5c7005b9e40\\res\\color\\mtrl_box_stroke_color.xml"
-    },
-    {
-        "merged": "D:\\Android_projects\\TestProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_arrow_back_black_24dp.xml.flat",
-        "source": "D:\\Android_projects\\TestProject\\app\\src\\main\\res\\drawable\\ic_arrow_back_black_24dp.xml"
     },
     {
         "merged": "D:\\Android_projects\\TestProject\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_popup_enter.xml.flat",

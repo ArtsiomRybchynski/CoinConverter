@@ -14,6 +14,8 @@ public class Coin {
 
     private String price;
 
+    private boolean isNotShown;
+
     @PrimaryKey(autoGenerate = true)
     private int id;
 
@@ -53,6 +55,9 @@ public class Coin {
         return price;
     }
 
+    public boolean isNotShown() {
+        return isNotShown;
+    }
 
     public void setId(int id) {
         this.id = id;
@@ -60,6 +65,10 @@ public class Coin {
 
     public void setPrice(String price) {
         this.price = price;
+    }
+
+    public void setNotShown(boolean notShown) {
+        isNotShown = notShown;
     }
 
     public void setName(String name) {
