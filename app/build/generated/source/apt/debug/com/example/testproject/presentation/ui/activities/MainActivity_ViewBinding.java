@@ -9,6 +9,7 @@ import androidx.appcompat.widget.Toolbar;
 import butterknife.Unbinder;
 import butterknife.internal.Utils;
 import com.example.testproject.R;
+import com.example.testproject.coin.list.ui.activitiy.MainActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.lang.IllegalStateException;
 import java.lang.Override;

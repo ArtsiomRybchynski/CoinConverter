@@ -4,7 +4,7 @@
             "outputFile": "D:\\Android_projects\\TestProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-tl\\values-tl.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Artsiom\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0-alpha01.aar\\6c9bf990e8556bcca01c3388f4ff9e72\\res\\values-tl\\values-tl.xml",
+                    "source": "C:\\Users\\Artsiom\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0-alpha01.aar\\19eb9f95d7beffba11bb63dc5331f871\\res\\values-tl\\values-tl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Artsiom\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.1.0-alpha03.aar\\9bd5e801e64bff68946f1668d0af9c7b\\res\\values-tl\\values-tl.xml",
+                    "source": "C:\\Users\\Artsiom\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.1.0-alpha03.aar\\f2ce0bfababfaa218bdeb10265888928\\res\\values-tl\\values-tl.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -4,7 +4,7 @@
             "outputFile": "D:\\Android_projects\\TestProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Artsiom\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.1.0-alpha03.aar\\40f92674e7bd70c74a6cd5c7005b9e40\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "C:\\Users\\Artsiom\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.1.0-alpha03.aar\\173d6e9e38e6721c1a6e8694d97a6ea5\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

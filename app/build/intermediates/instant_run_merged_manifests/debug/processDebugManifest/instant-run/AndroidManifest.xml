@@ -22,10 +22,10 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.testproject.presentation.ui.activities.MainActivity"
+            android:name="com.example.testproject.coin.list.ui.activitiy.MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.testproject.presentation.ui.activities.SplashScreenActivity"
+            android:name="com.example.testproject.splash.activity.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/SplashScreenTheme" >
             <intent-filter>
@@ -35,9 +35,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.testproject.presentation.ui.activities.CoinDetailActivity"
+            android:name="com.example.testproject.coin.detail.ui.activity.CoinDetailActivity"
             android:screenOrientation="portrait" />
-        <activity android:name="com.example.testproject.presentation.ui.activities.CoinFilterActivity" />
+        <activity android:name="com.example.testproject.coin.filter.ui.activity.CoinFilterActivity" />
 
         <service
             android:name="androidx.room.MultiInstanceInvalidationService"

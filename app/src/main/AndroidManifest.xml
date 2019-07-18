@@ -13,10 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".presentation.ui.activities.MainActivity"
+            android:name=".coin.list.ui.activitiy.MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presentation.ui.activities.SplashScreenActivity"
+            android:name=".splash.activity.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/SplashScreenTheme">
             <intent-filter>
@@ -26,9 +26,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".presentation.ui.activities.CoinDetailActivity"
+            android:name=".coin.detail.ui.activity.CoinDetailActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".presentation.ui.activities.CoinFilterActivity"></activity>
+        <activity android:name=".coin.filter.ui.activity.CoinFilterActivity"></activity>
     </application>
 
 </manifest>

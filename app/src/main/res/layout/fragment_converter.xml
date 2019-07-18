@@ -1,0 +1,105 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.testproject.coin.converter.ui.fragment.ConverterFragment">
+
+    <FrameLayout
+        android:id="@+id/frameInValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/layout_background"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/frameConverting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/etInValue"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:maxLength="25"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/ivInCurrency"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/coin_icon_description"
+            tools:src="@drawable/ic_bitcoin_symbol_inside_circulating_arrows" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameConverting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvConvertingValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:layout_margin="10dp"
+            tools:text="Text" />
+
+        <ImageView
+            android:id="@+id/ivConverting"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end|center"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/coin_icon_description"
+            android:src="@drawable/ic_loop_black_24dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/layout_background"
+        android:translationZ="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameConverting">
+
+        <TextView
+            android:id="@+id/tvConvertingResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:layout_margin="10dp"
+            tools:text="Text" />
+
+        <ImageView
+            android:id="@+id/ivOutCurrency"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end|center"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/coin_icon_description"
+            tools:src="@drawable/ic_dollar" />
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

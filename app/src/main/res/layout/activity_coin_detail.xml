@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.testproject.presentation.ui.activities.CoinDetailActivity">
+    tools:context=".coin.detail.ui.activity.CoinDetailActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/abCoinDetailScreen"
@@ -47,7 +47,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:background="@drawable/linear_layout_background"
+        android:background="@drawable/layout_background"
         android:elevation="3dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"

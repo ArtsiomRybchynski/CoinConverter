@@ -9,6 +9,8 @@ import androidx.annotation.UiThread;
 import butterknife.Unbinder;
 import butterknife.internal.Utils;
 import com.example.testproject.R;
+import com.example.testproject.coin.list.ui.adapter.ListAdapter;
+
 import java.lang.IllegalStateException;
 import java.lang.Override;
 

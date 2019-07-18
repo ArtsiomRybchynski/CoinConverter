@@ -9,7 +9,10 @@ import androidx.room.RoomSQLiteQuery;
 import androidx.room.SharedSQLiteStatement;
 import androidx.room.util.DBUtil;
 import androidx.sqlite.db.SupportSQLiteStatement;
-import com.example.testproject.entities.Coin;
+
+import com.example.testproject.database.dao.CoinDao;
+import com.example.testproject.entity.coin.Coin;
+
 import io.reactivex.Single;
 import java.lang.Exception;
 import java.lang.Override;
@@ -180,10 +183,10 @@ public final class CoinDao_Impl extends CoinDao {
           final int _cursorIndexOfName = androidx.room.util.CursorUtil.getColumnIndexOrThrow(_cursor, "name");
           final int _cursorIndexOfFullName = androidx.room.util.CursorUtil.getColumnIndexOrThrow(_cursor, "fullName");
           final int _cursorIndexOfAlgorithm = androidx.room.util.CursorUtil.getColumnIndexOrThrow(_cursor, "algorithm");
-          final java.util.List<com.example.testproject.entities.Coin> _result = new java.util.ArrayList<com.example.testproject.entities.Coin>(_cursor.getCount());
+          final java.util.List<Coin> _result = new java.util.ArrayList<Coin>(_cursor.getCount());
           while(_cursor.moveToNext()) {
-            final com.example.testproject.entities.Coin _item;
-            _item = new com.example.testproject.entities.Coin();
+            final Coin _item;
+            _item = new Coin();
             final java.lang.String _tmpPrice;
             _tmpPrice = _cursor.getString(_cursorIndexOfPrice);
             _item.setPrice(_tmpPrice);
@@ -243,9 +246,9 @@ public final class CoinDao_Impl extends CoinDao {
           final int _cursorIndexOfName = androidx.room.util.CursorUtil.getColumnIndexOrThrow(_cursor, "name");
           final int _cursorIndexOfFullName = androidx.room.util.CursorUtil.getColumnIndexOrThrow(_cursor, "fullName");
           final int _cursorIndexOfAlgorithm = androidx.room.util.CursorUtil.getColumnIndexOrThrow(_cursor, "algorithm");
-          final com.example.testproject.entities.Coin _result;
+          final Coin _result;
           if(_cursor.moveToFirst()) {
-            _result = new com.example.testproject.entities.Coin();
+            _result = new Coin();
             final java.lang.String _tmpPrice;
             _tmpPrice = _cursor.getString(_cursorIndexOfPrice);
             _result.setPrice(_tmpPrice);
@@ -304,10 +307,10 @@ public final class CoinDao_Impl extends CoinDao {
           final int _cursorIndexOfName = androidx.room.util.CursorUtil.getColumnIndexOrThrow(_cursor, "name");
           final int _cursorIndexOfFullName = androidx.room.util.CursorUtil.getColumnIndexOrThrow(_cursor, "fullName");
           final int _cursorIndexOfAlgorithm = androidx.room.util.CursorUtil.getColumnIndexOrThrow(_cursor, "algorithm");
-          final java.util.List<com.example.testproject.entities.Coin> _result = new java.util.ArrayList<com.example.testproject.entities.Coin>(_cursor.getCount());
+          final java.util.List<Coin> _result = new java.util.ArrayList<Coin>(_cursor.getCount());
           while(_cursor.moveToNext()) {
-            final com.example.testproject.entities.Coin _item;
-            _item = new com.example.testproject.entities.Coin();
+            final Coin _item;
+            _item = new Coin();
             final java.lang.String _tmpPrice;
             _tmpPrice = _cursor.getString(_cursorIndexOfPrice);
             _item.setPrice(_tmpPrice);

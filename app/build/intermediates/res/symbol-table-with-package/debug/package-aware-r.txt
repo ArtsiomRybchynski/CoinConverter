@@ -1267,19 +1267,24 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_belruble
 drawable ic_bitcoin_symbol_inside_circulating_arrows
 drawable ic_check_white_24dp
 drawable ic_compare_arrows_black_24dp
+drawable ic_dollar
+drawable ic_euro
 drawable ic_filter_list_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_list_black_24dp
+drawable ic_loop_black_24dp
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_ruble
 drawable launch_screen
-drawable linear_layout_background
+drawable layout_background
 drawable mtrl_popupmenu_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1297,6 +1302,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable vd_vector
 id ALT
 id CTRL
 id FUNCTION
@@ -1426,6 +1432,7 @@ id end
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
+id etInValue
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -1439,6 +1446,9 @@ id filter_chip
 id fixed
 id flip
 id forever
+id frameConverting
+id frameInValue
+id frameOut
 id frame—ontainer
 id ghost_view
 id glide_custom_view_target_tag
@@ -1458,6 +1468,9 @@ id italic
 id item_touch_helper_previous_elevation
 id ivCoinIcon
 id ivCoinIconFilter
+id ivConverting
+id ivInCurrency
+id ivOutCurrency
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -1613,6 +1626,8 @@ id tvCoinName
 id tvCoinNameFilter
 id tvCoinPrice
 id tvCoinPriceUsd
+id tvConvertingResult
+id tvConvertingValue
 id unchecked
 id uniform
 id unlabeled
@@ -1697,6 +1712,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout fragment_converter
 layout fragment_list
 layout list_coin_filter_layout
 layout list_coin_layout
@@ -1762,6 +1778,7 @@ string appbar_scrolling_view_behavior
 string bottom_converter_item_title
 string bottom_list_item_title
 string bottom_sheet_behavior
+string byn_currency
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -1772,6 +1789,8 @@ string coin_detail_name
 string coin_detail_price
 string coin_details
 string coin_icon_description
+string converting_value
+string eur_currency
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
@@ -1782,6 +1801,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string rub_currency
 string search_menu_title
 string status_bar_notification_info_overflow
 string toolbar_converter_title
@@ -1790,6 +1810,7 @@ string toolbar_filter
 string toolbar_filter_remove_all
 string toolbar_filter_save_changes
 string toolbar_filter_select_all
+string usd_currency
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

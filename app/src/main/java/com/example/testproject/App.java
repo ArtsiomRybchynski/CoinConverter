@@ -2,8 +2,8 @@ package com.example.testproject;
 
 import android.app.Application;
 
-import com.example.testproject.data.Repository;
-import com.example.testproject.data.RepositoryImpl;
+import com.example.testproject.source.Repository;
+import com.example.testproject.source.RepositoryImpl;
 
 public class App extends Application {
 

@@ -11,8 +11,13 @@
     <string name="coin_detail_full_name">Full name:\u0020</string>
     <string name="coin_detail_algorithm">Algorithm:\u0020</string>
     <string name="coin_detail_price">Price:\u0020</string>
+    <string name="converting_value">1 %1$s = %2$s %3$s</string>
     <string name="toolbar_filter_select_all">Select all</string>
     <string name="toolbar_filter_remove_all">Remove all</string>
     <string name="toolbar_filter_save_changes">Save changes</string>
+    <string name="usd_currency">USD</string>
+    <string name="eur_currency">EUR</string>
+    <string name="rub_currency">RUB</string>
+    <string name="byn_currency">BYN</string>
 
 </resources>

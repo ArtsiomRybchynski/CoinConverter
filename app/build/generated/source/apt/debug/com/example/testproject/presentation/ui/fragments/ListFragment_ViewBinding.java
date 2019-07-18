@@ -9,6 +9,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import butterknife.Unbinder;
 import butterknife.internal.Utils;
 import com.example.testproject.R;
+import com.example.testproject.coin.list.ui.fragment.ListFragment;
+
 import java.lang.IllegalStateException;
 import java.lang.Override;
 
